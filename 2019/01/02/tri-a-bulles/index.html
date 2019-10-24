@@ -7,18 +7,18 @@
   
   <title>Tri à bulles | Informatique Minute</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Github">
+  <meta name="description" content="Le code source de la vidéo est ici: Github  Pourquoi ca marche ? Dans boucle interne, la boucle iii, nous comparons tous les éléments du tableau avec leur élément suivant. Alors si ces deux éléments">
 <meta name="keywords" content="episode,algorithme,tri">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Tri à bulles">
 <meta property="og:url" content="https://informatique-minute.github.io/2019/01/02/tri-a-bulles/index.html">
 <meta property="og:site_name" content="Informatique Minute">
-<meta property="og:description" content="Github">
+<meta property="og:description" content="Le code source de la vidéo est ici: Github  Pourquoi ca marche ? Dans boucle interne, la boucle iii, nous comparons tous les éléments du tableau avec leur élément suivant. Alors si ces deux éléments">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-01-02T07:06:13.715Z">
+<meta property="og:updated_time" content="2019-10-24T03:16:08.716Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Tri à bulles">
-<meta name="twitter:description" content="Github">
+<meta name="twitter:description" content="Le code source de la vidéo est ici: Github  Pourquoi ca marche ? Dans boucle interne, la boucle iii, nous comparons tous les éléments du tableau avec leur élément suivant. Alors si ces deux éléments">
   
     <link rel="alternate" href="/atom.xml" title="Informatique Minute" type="application/atom+xml">
   
@@ -28,6 +28,7 @@
   
     <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
   
+    <link href="//cdn.jsdelivr.net/npm/katex@0.9.0/dist/katex.min.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="/css/style.css">
 </head>
 </html>
@@ -88,12 +89,24 @@
     <div class="article-entry" itemprop="articleBody">
       
         <div class="video-container"><iframe src="//www.youtube.com/embed/WMnNCR2PXQo" frameborder="0" allowfullscreen></iframe></div>
-<p><a href="https://github.com/informatique-minute/tri-a-bulles" target="_blank" rel="noopener">Github</a></p>
+<p>Le code source de la vidéo est ici: <a href="https://github.com/informatique-minute/tri-a-bulles" target="_blank" rel="noopener">Github</a></p>
+<h3 id="pourquoi-ca-marche"><a class="markdownIt-Anchor" href="#pourquoi-ca-marche"></a> Pourquoi ca marche ?</h3>
+<p>Dans boucle interne, la boucle <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>i</mi></mrow><annotation encoding="application/x-tex">i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.65952em;"></span><span class="strut bottom" style="height:0.65952em;vertical-align:0em;"></span><span class="base"><span class="mord mathit">i</span></span></span></span>, nous comparons tous les éléments du tableau avec leur<br>
+élément suivant. Alors si ces deux éléments ne sont pas dans l’ordre, nous les remettons<br>
+dans l’ordre en les permutant. Ainsi si l’élément le plus grand se trouve en position <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>i</mi></mrow><annotation encoding="application/x-tex">i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.65952em;"></span><span class="strut bottom" style="height:0.65952em;vertical-align:0em;"></span><span class="base"><span class="mord mathit">i</span></span></span></span>,<br>
+il se retrouvera en position <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>i</mi><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">i+1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.65952em;"></span><span class="strut bottom" style="height:0.74285em;vertical-align:-0.08333em;"></span><span class="base"><span class="mord mathit">i</span><span class="mord rule" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mord rule" style="margin-right:0.2222222222222222em;"></span><span class="mord">1</span></span></span></span>. En répétant cette opération pour chaque élément,<br>
+l’élément le plus grand se trouve en fin de liste à la fin de la boucle et il y restera.<br>
+Pour bien ranger, le deuxième plus grand élément, nous répétons la boucle suivante. En<br>
+répétant <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base"><span class="mord mathit">n</span></span></span></span> fois cette boucle, toute la liste sera triée.</p>
+<h3 id="combien-de-temps-pour-trier"><a class="markdownIt-Anchor" href="#combien-de-temps-pour-trier"></a> Combien de temps pour trier ?</h3>
+<p>Durant la boucle <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>i</mi></mrow><annotation encoding="application/x-tex">i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.65952em;"></span><span class="strut bottom" style="height:0.65952em;vertical-align:0em;"></span><span class="base"><span class="mord mathit">i</span></span></span></span>, nous effectuons <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base"><span class="mord mathit">n</span></span></span></span> comparaisons. Ensuite, durant la boucle <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>j</mi></mrow><annotation encoding="application/x-tex">j</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.65952em;"></span><span class="strut bottom" style="height:0.85396em;vertical-align:-0.19444em;"></span><span class="base"><span class="mord mathit" style="margin-right:0.05724em;">j</span></span></span></span>,<br>
+nous faisons aussi <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base"><span class="mord mathit">n</span></span></span></span> fois la boucle <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>i</mi></mrow><annotation encoding="application/x-tex">i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.65952em;"></span><span class="strut bottom" style="height:0.65952em;vertical-align:0em;"></span><span class="base"><span class="mord mathit">i</span></span></span></span>. Au total, nous faisons <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mi>n</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">n^2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.8141079999999999em;"></span><span class="strut bottom" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="base"><span class="mord"><span class="mord mathit">n</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span> comparaisons. Donc<br>
+pour trier <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base"><span class="mord mathit">n</span></span></span></span> éléments, nous effectuons de l’ordre <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mi>n</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">n^2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.8141079999999999em;"></span><span class="strut bottom" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="base"><span class="mord"><span class="mord mathit">n</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span> opérations.</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://informatique-minute.github.io/2019/01/02/tri-a-bulles/" data-id="cjqeudws50000rng03upef9w0" class="article-share-link">Share</a>
+      <a data-url="https://informatique-minute.github.io/2019/01/02/tri-a-bulles/" data-id="ck244gsjn0007v4g06e5tnub9" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/algorithme/">algorithme</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/episode/">episode</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/tri/">tri</a></li></ul>
